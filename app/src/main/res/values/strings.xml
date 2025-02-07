@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Coffee Shop</string>
+    <string name="homepage">ELEVATING THE COFFEE EXPERIENCE</string>
+    <string name="homepage2">Where coffee becomes a work of art...</string>
+    <string name="topProducts">TOP PRODUCTS</string>
+    <string name="addProduct">Add Product</string>
+    <string name="listProducts">List Products</string>
+    <string name="deleteProduct">Delete Product</string>
+    <string-array name="categories">
+        <item>Hot coffee</item>
+        <item>Cold coffee</item>
+        <item>Muffins</item>
+        <item>Pastries</item>
+        <item>Cookies</item>
+        <item>Tea</item>
+        <item>Smoothie</item>
+        <item>Hot chocolate</item>
+    </string-array>
+</resources>

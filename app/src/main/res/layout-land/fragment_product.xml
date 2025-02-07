@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:paddingBottom="20dp"
+    android:clipToPadding="false">
+<FrameLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductFragment">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/sand"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+            <ImageView
+                android:id="@+id/productImageDetails"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/productNameDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:textSize="24sp"
+                    android:text="Product name"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"/>
+                <TextView
+                    android:id="@+id/productPriceDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Price:"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose quantity:"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"/>
+                    <android.widget.NumberPicker
+                        android:id="@+id/quantityPicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/addToCartBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/light_green"
+                    android:text="Add to cart"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
+</androidx.core.widget.NestedScrollView>
