@@ -125,7 +125,6 @@ public class MyOrdersActivity extends BaseActivity {
         }
         cursor.close();
         db.close();
-
         return orderList;
     }
 
